@@ -12,7 +12,7 @@ btnLimpar.addEventListener("click", limparItensDeLista);
 btnAdicionar.addEventListener("click", () => {
   adicionaNaLista(pEntrada.textContent);
   atualizarLista();
-  pEntrada.textContent = ""; 
+  pEntrada.textContent = "";
 });
 
 function limparItensDeLista() {
