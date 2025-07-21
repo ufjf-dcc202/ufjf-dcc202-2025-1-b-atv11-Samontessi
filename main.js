@@ -1,4 +1,5 @@
 //main.js
+import { getLista, limpaLista } from "./lista";
 
 const olItens = document.querySelector("#itens");
 const pEntrada = document.querySelector("#entrada");
@@ -6,6 +7,12 @@ const btnAdicionar = document.querySelector("#adicionar");
 const btnLimpar = document.querySelector("#limpar");
 
 atualizarLista();
+btnLimpar.addEventListener("click", limparItensDeLista);
+
+function limparItensDeLista() {
+  limpaLista();
+  atualizarLista();
+}
 
 function atualizarLista() {
   olItems.innerHTML = "";
