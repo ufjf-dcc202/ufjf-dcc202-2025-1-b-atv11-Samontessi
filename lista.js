@@ -9,6 +9,10 @@ export function limpaLista() {
   lista.splice(0);
 }
 
-export function adicionaItem(item){
+export function adicionaNaLista(item){
     lista.push(item.trim());
+}
+
+export function removeDaLista(indice){
+    lista.splice(indice, 1);
 }

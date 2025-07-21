@@ -10,7 +10,7 @@ atualizarLista();
 btnLimpar.addEventListener("click", limparItensDeLista);
 
 btnAdicionar.addEventListener("click", () => {
-  adicionaItem(pEntrada.textContent);
+  adicionaNaLista(pEntrada.textContent);
   atualizarLista();
   pEntrada.textContent = ""; 
 });
